@@ -1,139 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Website</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-    body {
-      background-color: #F5F5DC; /* Light Beige */
-    }
-    .header {
-      background-color: #E6A9D4; /* Light Violet */
-      color: white;
-      text-align: center;
-      padding: 100px;
-    }
-    .nav {
-      background-color: #F1C6D3; /* Light Pink */
-      display: flex;
-      align-items: center;
-      padding: 15px;
-    }
-    .nav-links {
-      display: flex;
-      gap: 15px;
-    }
-    .nav a {
-      color:white;
-      text-decoration: none;
-      padding: 10px;
-    }
-    .nav a:hover {
-      background-color: #E8A7C2; /* Light Violet */
-    }
-    .nav-right {
-      margin-left: auto;
-      color: white;
-      text-decoration: none;
-      padding: 10px;
-    }
-    .nav-right:hover {
-      background-color: #D9A0B3; /* Slightly darker Light Pink */
-    }
-    .container {
-      display: flex;
-      padding: 20px;
-    }
-    .sidebar {
-      width: 30%;
-      padding: 15px;
-      background: #F5F5DC; /* Light Beige */
-    }
-    .main-content {
-      width: 70%;
-      padding: 15px;
-      background: white;
-      margin-left: 20px;
-    }
-    .image-placeholder {
-      background: #F1C6D3; /* Light Pink */
-      width: 100%;
-      height: auto;
-      display: block;
-      align-items: center;
-      justify-content: center;
-      margin: 10px 0px;
-    }
-    .footer {
-      text-align: center;
-      padding: 10px;
-      margin-top: 20px;
-      background-color:#E6A9D4; /* Light Violet */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color:white;
+        }
+        .header {
+            background-color: gray
+            ;
+            color: white;
+            text-align: center;
+            padding: 100px;
+        }
+        .nav {
+            background-color: #2d3748;
+            display: flex;            
+            align-items: center;
+            padding: 15px;
+        }
+        .nav-links {
+            display: flex;  
+            gap: 15px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding:10px;
+        }
+        .nav a:hover {
+            background-color: #575757;
+        }
+        .nav-right {
+            margin-left: auto;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .nav-right:hover {
+            background-color: #575757;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 30%;
+            padding: 15px;
+            background: white;
+        }
+        .main-content {
+            width: 70%;
+            padding: 15px;
+            background: white;
+            margin-left: 20px;
+        }
+        .image-placeholder {
+            background: #ccc;
+            width: 100%;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .footer {
+            background-color: #ddd;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        h5 {
+          text-align: center; 
+        }
+          
+    </style>
 </head>
 <body>
-  <div class="header">
-    <h1>My Website</h1>
-    <p>A website created by Janelle</p>
-  </div>
-
-  <div class="nav">
-    <div class="nav-links">
-      <a href="#aboutme">ABOUT ME</a>
-      <a href="#1">MY GALLERY</a>
-      <a href="#2">HEADING 1</a>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>A website created by Nieto</p>
     </div>
-    <a href="#3" class="nav-right">HEADING 2</a>
-  </div>
-
-  <div class="container">
-    <div class="sidebar">
-      <h2 id="aboutme">About Me</h2>
-      <p><b>Photo of me</b></p>
-      <div class="image-placeholder" style="margin-top: 20px;">
-        <img src="janelle.jpeg" alt="My photo" style="height: 250px; width: 100%; object-fit: cover;">
-      </div><br>
-
-      <p>My name is Janelle and I am a motivated BSIT student with a passion for technology and innovation. I am currently honing my skills in programming languages such as Java, HTML, and CSS, and have a strong foundation in database management and cybersecurity. I am constantly seeking out new challenges and opportunities to expand my knowledge in the field of information technology.</p><br><br>
-
-      <h3 id="1">MY GALLERY</h3><br>
-      <p>This is my happiness</p>
-      <div class="image-placeholder">
-        <img src="3.jpeg" alt="Image" style="width: 100%; height: auto;">
-      </div>
-
-      <div class="image-placeholder">
-        <img src="2.jpeg" alt="Image" style="width: 100%; height: auto;">
-      </div>
-
-      <div class="image-placeholder">
-        <img src="10.jpeg" alt="Image" style="width: 100%; height: auto;">
-      </div>
-      
-      
+    
+    <div class="nav">
+        <div class="nav-links">
+            <a href="#aboutme">ABOUT ME</a>
+            <a href="#1">Gallery</a>
+            <a href="#2">Story</a>
+        </div>
+        <a href="#3" class="nav-right">end</a>
     </div>
-    <div class="main-content"><br>
-      <h2 id="2">MY TWO SISTERS</h2><br>
-      <p><i>August 10,2024</i></p><br>
-      <div class="image-placeholder">
-        <img src="2sister.jpeg" alt="Main content image" style="width: 100%; height: auto;">
-      </div><br>
-      <p>I just want you both to know how much I love and appreciate you both. You are not just my sisters, but my best friends and confidantes. I am so grateful to have you both in my life to laugh with, cry with, and share all of life's ups and downs.</p><br>
-      <p>Thank you for always being there for me, for supporting me, and for being the amazing women that you are. I love you both more than words can express.</p><br>
-      <h2 id="3">MY BEST FRIENDS</h2><br>
-      <p><i>Sep 2, 2024</i></p><br>
-      <div class="image-placeholder">
-        <img src="bff.jpeg" alt="Another image" style="width: 100%; height: auto;">
-      </div><br>
-      <p> I am so incredibly lucky to have each and every one of you in my life. You all bring something unique and special to our friendship, and I am grateful for the love, support, and laughter you bring into my life every dayp>I just want you both to know how much I love and appreciate you both. You are not just my sisters, but my best friends and confidantes. I am so grateful to have you both in my life to laugh with, cry with, and share all of life's ups and downs.</p><br>
-<p>Thank you for always being there for me, for supporting me, and for being the amazing women that you are. I love you both more than words can express.
-‎</p><br>
-      <p>Whether we are sharing secrets, making memories, or simply being there for each other, I know I can always count on each of you. Our bond is unbreakable, and I cherish each and every one of
+
+    <div class="container">
+        <div class="sidebar">
+            <h2 class id="aboutme">About Me</h2>
+            <p><b>Photo of me</b></p>
+            <div class="image-placeholder">
+                <img src="me.jpg" alt="Kurt Axle R. Nieto">
+            </div><br>
+            <p> I am Kurt Axle R. Nieto From Cabanatuan City,Nueva ecija and I am 18 years old.<br>    </p>
+            <h3 class id="1">My Gallery</h3><br>
+            <h6>   our memories is the bridge between who we were and who we are a collection of feelings, images, and stories that live quietly in our hearts, often returning when we least expect them  </h6><br> 
+            <div class="image-placeholder">
+                <img src="1st.jpg" alt="Image">
+            </div>
+            <h6>   </h6>
+            <div class="image-placeholder">
+                <img src="2nd.jpg" alt="Image">
+            </div>
+            <h6></h6>
+            <div class="image-placeholder">
+                <img src="3rd.jpg" alt="Image">
+            </div>
+            
+        </div>
+        
+        <div class="main-content"> <br>
+            <h2 class id="2">Echoes Of Yesterday</h2><br>
+            <p><i>  </i></p><br>
+            <div class="image-placeholder">
+                <img src="story1.jpg" alt="Main content image">
+            </div>
+            <p>the beautiful thing in life is not about the things but the memories,the laugh, the joy that the people around us giving you the smile that make you forget your current problem and just be happy at those moments and cherish it with them<3</p><br>
+            <br>
+            
+            <h2 class id="3">"its just a game"</h2><br>
+            <div class="image-placeholder">
+                <img src="story2.jpg" alt="Another image">
+            </div><br>
+            <p>     People say it's just a game, but what they don't know is that this game is more than just pixels on a screen or a set of rules to follow. It’s a world where stories unfold, where relationships are built, and where skills are tested in ways that mirror real-life challenges. For many, this game is an escape, a space where they can explore new identities, solve complex problems, or experience the thrill of victory and the sting of defeat.</p><br>
+                <br> What makes this game special is the community it fosters. It's not just about winning or losing; it’s about connecting with others who share a common passion. The teamwork, the strategies, and the camaraderie that develop within the game are reflections of real-world interactions. In this space, players support each other, learn from one another, and grow together.,<br><br>
